@@ -3,6 +3,7 @@ import org.junit.BeforeClass;
 import org.junit.Test;
 import org.openqa.selenium.By;
 import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.remote.RemoteWebDriver;
 
 import java.io.FileInputStream;
 import java.io.IOException;
@@ -15,9 +16,10 @@ import java.util.concurrent.TimeUnit;
 
 
 
-public class LoginTest {
+public class AmoBannerActivation {
 
-    public static FirefoxDriver driver;
+//    public static FirefoxDriver driver;
+    public static RemoteWebDriver driver;
     public static final By loginButton = By.cssSelector("#aux-nav li.account a:nth-child(2)");
     public static final By loginEmailField = By.id("id_username");
     public static final By loginPasswordField = By.id("id_password");
@@ -68,7 +70,7 @@ public class LoginTest {
         driver.findElement(loggedInField).click();
         driver.findElement(loginSubmitField).click();
 
-        driver.get(prop.getProperty("URL")+"firefox/discovery/modules");
+        driver.get(prop.getProperty("URL") + "firefox/discovery/modules");
         driver.findElement(monthlyPickField).sendKeys("1");
         driver.findElement(submitDiscoveryModule).click();
 
