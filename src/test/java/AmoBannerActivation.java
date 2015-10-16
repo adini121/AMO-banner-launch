@@ -13,7 +13,6 @@ import java.util.concurrent.TimeUnit;
 /**
  * Created by adi on 14/10/15.
  */
-/Users/adityanisal/IdeaProjects/AmoTests/src/test/java/AmoBannerActivation.java
 
 
 public class AmoBannerActivation {
