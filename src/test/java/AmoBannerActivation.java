@@ -43,15 +43,6 @@ public class AmoBannerActivation {
 
     }
 
-//    public boolean loginVerification() {
-//       boolean isLoggedIn = true;
-//       if(driver.findElements(userNameField).size()!=0) {
-//           return isLoggedIn;
-//       } else
-//        System.out.print("User not logged in");
-//        return false;
-//    }
-
     @Test
      public void activateBannerTest() {
         Properties prop = new Properties();
@@ -83,33 +74,6 @@ public class AmoBannerActivation {
 
     }
 
-
-//    @Test
-//    public void loginTest() {
-//        boolean isLoggedIn = loginVerification();
-//        if (!isLoggedIn) {
-//            this.loginAmo();
-//        }
-//    }
-//
-//     @Test
-//    public void discoveryModuleTest(){
-//       this.loginAmo();
-//        driver.get(discoveryModuleUrl);
-//        driver.findElement(monthlyPickField).sendKeys("1");
-//        driver.findElement(submitDiscoveryModule).click();
-//    }
-//
-//    @Test
-//    public void monthlyPickTest(){
-//        this.loginAmo();
-//        driver.get(monthlyPickUrl);
-//        driver.findElement(addMonthlyPickFeature).click();
-//        driver.findElement(addonID).sendKeys("1");
-//        driver.findElement(addonBlurb).sendKeys("some blurb");
-//        driver.findElement(saveAddonChanges).click();
-//        driver.get(baseUrl);
-//
     @AfterClass
     public static void tearDown(){
         driver.quit();
