@@ -15,7 +15,7 @@ import java.util.concurrent.TimeUnit;
  */
 
 
-public class AmoBannerActivation {
+public class AmoBannerActivationTest {
 
 //    public static FirefoxDriver driver;
     public static RemoteWebDriver driver;
